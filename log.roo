@@ -1,0 +1,83 @@
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-10-30 19:14:42
+project --topLevelPackage com.sjsu.movie
+jpa setup --provider HIBERNATE --database MYSQL
+entity jpa --class ~.domain.MemberType --testAutomatically
+field number --fieldName memberTypeId --type java.lang.Integer
+field string --fieldName typeName --notNull --sizeMin 2 --sizeMax 30
+field number --fieldName totalMovies --type java.lang.Integer
+field number --fieldName memberFee --type java.lang.Double
+entity jpa --class ~.domain.MovieUser --testAutomatically
+field number --fieldName userId --type java.lang.Integer
+field string --fieldName userName --notNull --sizeMin 2 --sizeMax 30
+field string --fieldName password --notNull --sizeMin 6 --sizeMax 15
+field string --fieldName firstName --notNull --sizeMin 2 --sizeMax 30
+field string --fieldName lastName --notNull --sizeMin 2 --sizeMax 30
+field string --fieldName email --notNull --sizeMin 2 --sizeMax 40
+field string --fieldName addressLine1 --notNull --sizeMax 100
+field string --fieldName addressLine2 --notNull --sizeMax 100
+field string --fieldName city --notNull --sizeMin 2
+field string --fieldName cState --notNull --sizeMin 2
+field string --fieldName country --notNull --sizeMin 2
+field string --fieldName zipCode --notNull --sizeMin 5 --sizeMax 5
+field string --fieldName cellphone --notNull --sizeMin 8 --sizeMax 15
+field string --fieldName userRole --notNull --sizeMax 15
+field string --fieldName userState 
+field date --fieldName createdDate --type java.util.Date
+field date --fieldName updatedDate --type java.util.Date
+entity jpa --class ~.domain.Movie --testAutomatically
+field number --fieldName movieId --type java.lang.Integer
+field string --fieldName movieName --notNull 
+field string --fieldName category
+field date --fieldName releaseDate --notNull --type java.util.Date
+field string --fieldName summary 
+field string --fieldName banner 
+field number --fieldName rentFee --type java.lang.Double
+field number --fieldName numberOfCopies --type java.lang.Integer
+field date --fieldName createdDate --notNull --type java.util.Date
+entity jpa --class ~.domain.MembershipInfo --testAutomatically
+field number --fieldName membershipId --type java.lang.Integer
+field string --fieldName membershipNumber --notNull 
+field number --fieldName balance --type java.lang.Double
+field number --fieldName userId --notNull --type java.lang.Integer
+field number --fieldName outstandingMovies --type java.lang.Integer
+field date --fieldName createdDate --type java.util.Date
+field date --fieldName updatedDate --type java.util.Date
+entity jpa --class ~.domain.MovieRental --testAutomatically
+field number --fieldName movieRentalId --type java.lang.Integer
+field number --fieldName userId --notNull --type java.lang.Integer
+field number --fieldName movieId --notNull --type java.lang.Integer
+field date --fieldName rentedDate --notNull --type java.util.Date
+field date --fieldName returnedDate --type java.util.Date
+field date --fieldName dueDate --notNull --type java.util.Date
+field string --fieldName comments --notNull 
+field date --fieldName updatedDate --type java.util.Date
+entity jpa --class ~.domain.Bill --testAutomatically
+field number --fieldName billId --type java.lang.Integer
+field number --fieldName userId --notNull --type java.lang.Integer
+field date --fieldName billStartDate --notNull --type java.util.Date
+field date --fieldName billEndDate --type java.util.Date
+field number --fieldName amount --type java.lang.Double
+field date --fieldName dueDate --notNull --type java.util.Date
+field string --fieldName comments --notNull 
+field date --fieldName updatedDate --type java.util.Date
+focus --class ~.domain.MembershipInfo
+field reference --fieldName movieUser --type ~.domain.MovieUser
+field reference --fieldName memberType --type ~.domain.MemberType
+focus --class ~.domain.MovieRental
+field reference --fieldName movieUser --type ~.domain.MovieUser
+field reference --fieldName movie --type ~.domain.Movie
+focus --class ~.domain.Bill
+field reference --fieldName movieUser --type ~.domain.MovieUser
+service type --interface ~.service.MovieUserService --entity ~.domain.MovieUser
+service type --interface ~.service.MovieService --entity ~.domain.Movie
+service type --interface ~.service.MovieRentalService --entity ~.domain.MovieRental
+service type --interface ~.service.BillService --entity ~.domain.Bill
+// script --file ..\movie-store.roo
+quit
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-10-30 19:15:01
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-10-30 19:15:48
+web mvc setup
+web mvc all --package ~.web
+security setup
+quit
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-10-30 19:18:27

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_sjsu_movie_domain_MovieUser" object="${movieuser}" path="/movieusers" z="kea8fShoPxjeaNTeFZVlljBwSKw=">
+        <field:display field="userId" id="s_com_sjsu_movie_domain_MovieUser_userId" object="${movieuser}" z="Wor2IpcQ1vlEtPyco8Y+QWjg5Hc="/>
+        <field:display field="userName" id="s_com_sjsu_movie_domain_MovieUser_userName" object="${movieuser}" z="KrbuydSaR5byoZs7TGYMzX/Hu1w="/>
+        <field:display field="password" id="s_com_sjsu_movie_domain_MovieUser_password" object="${movieuser}" z="Jn2BO1/HuYV9B/ea+yD8N4njtq8="/>
+        <field:display field="firstName" id="s_com_sjsu_movie_domain_MovieUser_firstName" object="${movieuser}" z="cRsZuB43dagvRplJtiTWAIgUF+c="/>
+        <field:display field="lastName" id="s_com_sjsu_movie_domain_MovieUser_lastName" object="${movieuser}" z="fqQD+9fn5KY/OLxtSQmkAZUjs+s="/>
+        <field:display field="email" id="s_com_sjsu_movie_domain_MovieUser_email" object="${movieuser}" z="3jnBTv2gttTUlDddHQVyohBL1vc="/>
+        <field:display field="addressLine1" id="s_com_sjsu_movie_domain_MovieUser_addressLine1" object="${movieuser}" z="wC4S4CnObEYO4TzFdEmLpULdBs0="/>
+        <field:display field="addressLine2" id="s_com_sjsu_movie_domain_MovieUser_addressLine2" object="${movieuser}" z="jJCHp5hr+bxTbfm/ANUNH17Gv6w="/>
+        <field:display field="city" id="s_com_sjsu_movie_domain_MovieUser_city" object="${movieuser}" z="JQbW8YZg28pl0medhGCocz2RtjQ="/>
+        <field:display field="CState" id="s_com_sjsu_movie_domain_MovieUser_cState" object="${movieuser}" z="/l+dyLucDVplZ5HuQPXwKF/U/Xk="/>
+        <field:display field="country" id="s_com_sjsu_movie_domain_MovieUser_country" object="${movieuser}" z="Cm3bSnmt72pM64TM6QXYaFUR+bk="/>
+        <field:display field="zipCode" id="s_com_sjsu_movie_domain_MovieUser_zipCode" object="${movieuser}" z="QEWoXle2VznEyt3coSEhCqwy0AM="/>
+        <field:display field="cellphone" id="s_com_sjsu_movie_domain_MovieUser_cellphone" object="${movieuser}" z="MNET8dh97ibvjbWDURGOiQmotvo="/>
+        <field:display field="userRole" id="s_com_sjsu_movie_domain_MovieUser_userRole" object="${movieuser}" z="izfTM/itwri4/4PaeDgBU94vXxQ="/>
+        <field:display field="userState" id="s_com_sjsu_movie_domain_MovieUser_userState" object="${movieuser}" z="HtBs8PV+KD8aPTg0qgC7l9mp9WA="/>
+        <field:display date="true" dateTimePattern="${movieUser_createddate_date_format}" field="createdDate" id="s_com_sjsu_movie_domain_MovieUser_createdDate" object="${movieuser}" z="dsCq/ep/2NZ7Ec6QEOZQ7NApVHU="/>
+        <field:display date="true" dateTimePattern="${movieUser_updateddate_date_format}" field="updatedDate" id="s_com_sjsu_movie_domain_MovieUser_updatedDate" object="${movieuser}" z="hMiN7yFUqmRyrDPGoVas/dGjkfc="/>
+    </page:show>
+</div>

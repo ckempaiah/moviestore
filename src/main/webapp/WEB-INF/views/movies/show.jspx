@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_sjsu_movie_domain_Movie" object="${movie}" path="/movies" z="4aTE0YuwgXfliKuiPgItO8gkifs=">
+        <field:display field="movieId" id="s_com_sjsu_movie_domain_Movie_movieId" object="${movie}" z="9YG32sRVpdTBjvbA5eDrWVasum8="/>
+        <field:display field="movieName" id="s_com_sjsu_movie_domain_Movie_movieName" object="${movie}" z="2qUqBP9fpuInGzImWqxlp/rAOBA="/>
+        <field:display field="category" id="s_com_sjsu_movie_domain_Movie_category" object="${movie}" z="vKUfugKLmIEeSR/7eX9I2Lvlvmo="/>
+        <field:display date="true" dateTimePattern="${movie_releasedate_date_format}" field="releaseDate" id="s_com_sjsu_movie_domain_Movie_releaseDate" object="${movie}" z="uUzxDb0ZTbLaO2DKFSrGDAVwzqs="/>
+        <field:display field="summary" id="s_com_sjsu_movie_domain_Movie_summary" object="${movie}" z="c6FCmjWeuxK1T8yXcFqm35Ss1sM="/>
+        <field:display field="banner" id="s_com_sjsu_movie_domain_Movie_banner" object="${movie}" z="dHFpjdBNDmZYxVCbRe2WD6TC5Qg="/>
+        <field:display field="rentFee" id="s_com_sjsu_movie_domain_Movie_rentFee" object="${movie}" z="FSHv3EFwUTPk3Rdzv0GU80l0Qo8="/>
+        <field:display field="numberOfCopies" id="s_com_sjsu_movie_domain_Movie_numberOfCopies" object="${movie}" z="Iqg1yvd2u6FFjFttpUkFBvYyM6g="/>
+        <field:display date="true" dateTimePattern="${movie_createddate_date_format}" field="createdDate" id="s_com_sjsu_movie_domain_Movie_createdDate" object="${movie}" z="Z8PHQ/lTe0BeO7XkUn7zMdq8EN0="/>
+    </page:show>
+</div>

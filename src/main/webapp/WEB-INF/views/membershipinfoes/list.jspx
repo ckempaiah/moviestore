@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_sjsu_movie_domain_MembershipInfo" items="${membershipinfoes}" z="xVm4necfSvHgCTZKRHt95e/ic6Y=">
+        <table:table data="${membershipinfoes}" id="l_com_sjsu_movie_domain_MembershipInfo" path="/membershipinfoes" z="Kvva7r/wQpN+ulRYZqosi6KM3ho=">
+            <table:column id="c_com_sjsu_movie_domain_MembershipInfo_membershipId" property="membershipId" z="7iKUOrUxi7bjtjhHuqKGY/p+gnQ="/>
+            <table:column id="c_com_sjsu_movie_domain_MembershipInfo_membershipNumber" property="membershipNumber" z="20yTQeDdyDhmMO0M9K855EdJmnI="/>
+            <table:column id="c_com_sjsu_movie_domain_MembershipInfo_balance" property="balance" z="y3as9SaK5MRhOfVX7iICmz4YTkw="/>
+            <table:column id="c_com_sjsu_movie_domain_MembershipInfo_userId" property="userId" z="fHeUN8uqs+iWJYf29ntyInfy4j0="/>
+            <table:column id="c_com_sjsu_movie_domain_MembershipInfo_outstandingMovies" property="outstandingMovies" z="RxBEVsoyXR8zR2CyK8VadN86WN4="/>
+            <table:column date="true" dateTimePattern="${membershipInfo_createddate_date_format}" id="c_com_sjsu_movie_domain_MembershipInfo_createdDate" property="createdDate" z="eyBEmFtuNzMuRtNwXvdR+gmPijs="/>
+        </table:table>
+    </page:list>
+</div>

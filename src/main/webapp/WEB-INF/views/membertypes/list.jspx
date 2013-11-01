@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_sjsu_movie_domain_MemberType" items="${membertypes}" z="hGlY9JjngfcqZ1qpT2nYSrjGnZo=">
+        <table:table data="${membertypes}" id="l_com_sjsu_movie_domain_MemberType" path="/membertypes" z="mC23m6gP/l2PcMoG48nQqGYp27A=">
+            <table:column id="c_com_sjsu_movie_domain_MemberType_memberTypeId" property="memberTypeId" z="hEvhJ5emKlRJc7snXInQ2eNwZik="/>
+            <table:column id="c_com_sjsu_movie_domain_MemberType_typeName" property="typeName" z="XjAVWzUertfFjytXXHltw3a1oJc="/>
+            <table:column id="c_com_sjsu_movie_domain_MemberType_totalMovies" property="totalMovies" z="iTJtvECXlwoRfOpKNtmtene2AWc="/>
+            <table:column id="c_com_sjsu_movie_domain_MemberType_memberFee" property="memberFee" z="ExPa4zRHmXFbQUq/fmHM4nYOH74="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_sjsu_movie_domain_MemberType" modelAttribute="memberType" path="/membertypes" render="${empty dependencies}" z="Be5HQqRwVpefvDfBz9+J/ssAH7A=">
+        <field:input field="memberTypeId" id="c_com_sjsu_movie_domain_MemberType_memberTypeId" validationMessageCode="field_invalid_integer" z="3HESC/o8Ywu+CG/mqplooDDldbA="/>
+        <field:input field="typeName" id="c_com_sjsu_movie_domain_MemberType_typeName" max="30" min="2" required="true" z="NtF3/B0a4g25cBEcG4VHAO0VBzA="/>
+        <field:input field="totalMovies" id="c_com_sjsu_movie_domain_MemberType_totalMovies" validationMessageCode="field_invalid_integer" z="U0hOJFSU2alghlq7509f+0wVhNo="/>
+        <field:input field="memberFee" id="c_com_sjsu_movie_domain_MemberType_memberFee" validationMessageCode="field_invalid_number" z="lT8uSvMqHwWF2LxhCUq6hDe0Pl0="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_sjsu_movie_domain_MemberType" render="${not empty dependencies}" z="CRyRi1VlT4Sg5TbWy566vTz6lZQ="/>
+</div>

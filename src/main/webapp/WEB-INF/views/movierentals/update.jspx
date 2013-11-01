@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_sjsu_movie_domain_MovieRental" modelAttribute="movieRental" path="/movierentals" versionField="Version" z="Iwqcocw5WsP6whwTXfiZM+VP3iw=">
+        <field:input field="movieRentalId" id="c_com_sjsu_movie_domain_MovieRental_movieRentalId" validationMessageCode="field_invalid_integer" z="8innXy/vGNsShZq+8PHFsS1dgmg="/>
+        <field:input field="userId" id="c_com_sjsu_movie_domain_MovieRental_userId" required="true" validationMessageCode="field_invalid_integer" z="K4Y7H6qH0FPaG7/GtsnFEe1Y5Jc="/>
+        <field:input field="movieId" id="c_com_sjsu_movie_domain_MovieRental_movieId" required="true" validationMessageCode="field_invalid_integer" z="LntFTCjh4nK1K1kHG+eRst28l6w="/>
+        <field:datetime dateTimePattern="${movieRental_renteddate_date_format}" field="rentedDate" id="c_com_sjsu_movie_domain_MovieRental_rentedDate" required="true" z="DL4NfChhUHT9uSlTs69dx57lSzw="/>
+        <field:datetime dateTimePattern="${movieRental_returneddate_date_format}" field="returnedDate" id="c_com_sjsu_movie_domain_MovieRental_returnedDate" z="plrKwSVtZcx6rHocjSYNXs8ieZ0="/>
+        <field:datetime dateTimePattern="${movieRental_duedate_date_format}" field="dueDate" id="c_com_sjsu_movie_domain_MovieRental_dueDate" required="true" z="mza816I7wEHfsOvnDOFujSACpyU="/>
+        <field:input field="comments" id="c_com_sjsu_movie_domain_MovieRental_comments" required="true" z="U7w7B02qnQ5j+rzktlR7WPNB4yI="/>
+        <field:datetime dateTimePattern="${movieRental_updateddate_date_format}" field="updatedDate" id="c_com_sjsu_movie_domain_MovieRental_updatedDate" z="1tyS8L/1u7+6hFVJXvYus0B845E="/>
+        <field:select field="movieUser" id="c_com_sjsu_movie_domain_MovieRental_movieUser" itemValue="id" items="${movieusers}" path="/movieusers" z="s1YeH5ndUaKHhuvB7T7jrL9Sjo0="/>
+        <field:select field="movie" id="c_com_sjsu_movie_domain_MovieRental_movie" itemValue="id" items="${movies}" path="/movies" z="3VMul9N00K6Ehs8FYn2bt5u+BFA="/>
+    </form:update>
+</div>

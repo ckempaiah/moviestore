@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_sjsu_movie_domain_Bill" items="${bills}" z="8LajPmV3dvF7zykugHIwdG9E3b0=">
+        <table:table data="${bills}" id="l_com_sjsu_movie_domain_Bill" path="/bills" z="CzWtQ45yxSlXwvWETMrnbZiMVbU=">
+            <table:column id="c_com_sjsu_movie_domain_Bill_billId" property="billId" z="8z/HT2Iwg81FrsBaqOPC6IsP4IM="/>
+            <table:column id="c_com_sjsu_movie_domain_Bill_userId" property="userId" z="0s82qamFvY2GfKYRN4tHKPBvMQc="/>
+            <table:column date="true" dateTimePattern="${bill_billstartdate_date_format}" id="c_com_sjsu_movie_domain_Bill_billStartDate" property="billStartDate" z="bkVD9gVcRptx0QgUeLxDYrTkvOo="/>
+            <table:column date="true" dateTimePattern="${bill_billenddate_date_format}" id="c_com_sjsu_movie_domain_Bill_billEndDate" property="billEndDate" z="THegBRIzeoFD4FoU3joyreitPgc="/>
+            <table:column id="c_com_sjsu_movie_domain_Bill_amount" property="amount" z="JNV0mVJ3gPXGxNfNaicIbI1Qlx8="/>
+            <table:column date="true" dateTimePattern="${bill_duedate_date_format}" id="c_com_sjsu_movie_domain_Bill_dueDate" property="dueDate" z="zh5KdOKNVToX8lRnb06qjbx9oiQ="/>
+        </table:table>
+    </page:list>
+</div>

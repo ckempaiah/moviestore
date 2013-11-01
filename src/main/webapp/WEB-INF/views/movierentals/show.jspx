@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_sjsu_movie_domain_MovieRental" object="${movierental}" path="/movierentals" z="rlLMzxsnVHTHEJxMVMTWx9FFbT8=">
+        <field:display field="movieRentalId" id="s_com_sjsu_movie_domain_MovieRental_movieRentalId" object="${movierental}" z="zVp8reYiepShaygZtfq+43JKnTE="/>
+        <field:display field="userId" id="s_com_sjsu_movie_domain_MovieRental_userId" object="${movierental}" z="FKaYQAZFJAY6KtY9xFNx4lC24zU="/>
+        <field:display field="movieId" id="s_com_sjsu_movie_domain_MovieRental_movieId" object="${movierental}" z="EJsW3C7JZotz96vGKXkL+dM9afw="/>
+        <field:display date="true" dateTimePattern="${movieRental_renteddate_date_format}" field="rentedDate" id="s_com_sjsu_movie_domain_MovieRental_rentedDate" object="${movierental}" z="u04NMextgmR5gtTpX+dgqYxGNZg="/>
+        <field:display date="true" dateTimePattern="${movieRental_returneddate_date_format}" field="returnedDate" id="s_com_sjsu_movie_domain_MovieRental_returnedDate" object="${movierental}" z="EK8Rifx8LoTO/svh3sWG72jsOv8="/>
+        <field:display date="true" dateTimePattern="${movieRental_duedate_date_format}" field="dueDate" id="s_com_sjsu_movie_domain_MovieRental_dueDate" object="${movierental}" z="ypT18ZjNi2P67gKrnklsTCwvTrw="/>
+        <field:display field="comments" id="s_com_sjsu_movie_domain_MovieRental_comments" object="${movierental}" z="6o02ilaDY+d93uzD0xzjjwqlMoY="/>
+        <field:display date="true" dateTimePattern="${movieRental_updateddate_date_format}" field="updatedDate" id="s_com_sjsu_movie_domain_MovieRental_updatedDate" object="${movierental}" z="ThvMV5MfkK+/j2s6R0cVjBAxYyU="/>
+        <field:display field="movieUser" id="s_com_sjsu_movie_domain_MovieRental_movieUser" object="${movierental}" z="2+fL5SjSmDUNBp0f5oB3jKUysHk="/>
+        <field:display field="movie" id="s_com_sjsu_movie_domain_MovieRental_movie" object="${movierental}" z="djIf3WUMqcd7nM8mPF6gETL9Tx0="/>
+    </page:show>
+</div>

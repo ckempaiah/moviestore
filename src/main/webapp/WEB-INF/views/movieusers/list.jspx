@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_sjsu_movie_domain_MovieUser" items="${movieusers}" z="0eKsOJ7R73QjtqDhvoQCIzYZiHE=">
+        <table:table data="${movieusers}" id="l_com_sjsu_movie_domain_MovieUser" path="/movieusers" z="LG24Y6iCrYOx/e2AwEkMG3Gcc4U=">
+            <table:column id="c_com_sjsu_movie_domain_MovieUser_userId" property="userId" z="3RinjTN7lpsYtyvDXbz3ClBDXXU="/>
+            <table:column id="c_com_sjsu_movie_domain_MovieUser_userName" property="userName" z="YQWrJu0iToMLQduO3Q+G3qFGThk="/>
+            <table:column id="c_com_sjsu_movie_domain_MovieUser_password" property="password" z="7Pag14ySFS52XNwsvbVBlklGV3E="/>
+            <table:column id="c_com_sjsu_movie_domain_MovieUser_firstName" property="firstName" z="IxEcWxIOXiBU45wWa+oKyMKc4aI="/>
+            <table:column id="c_com_sjsu_movie_domain_MovieUser_lastName" property="lastName" z="+Gi9wCqJcMytolf9wNVnYlZbrWY="/>
+            <table:column id="c_com_sjsu_movie_domain_MovieUser_email" property="email" z="1l3q3tsF2+cEczJbdFLHiliEW2w="/>
+        </table:table>
+    </page:list>
+</div>

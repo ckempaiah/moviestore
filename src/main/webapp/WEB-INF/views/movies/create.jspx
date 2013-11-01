@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_sjsu_movie_domain_Movie" modelAttribute="movie" path="/movies" render="${empty dependencies}" z="VhWMS5sJOdqEaEjOcAUARyE46PA=">
+        <field:input field="movieId" id="c_com_sjsu_movie_domain_Movie_movieId" validationMessageCode="field_invalid_integer" z="TVjQS7q1Wm/PYchihYML7SmePSs="/>
+        <field:input field="movieName" id="c_com_sjsu_movie_domain_Movie_movieName" required="true" z="LcCZKCZWKx3hKtoLFJj0YxnUslc="/>
+        <field:input field="category" id="c_com_sjsu_movie_domain_Movie_category" z="QVVWC2me1ieZalWMp/E3QeRrtoE="/>
+        <field:datetime dateTimePattern="${movie_releasedate_date_format}" field="releaseDate" id="c_com_sjsu_movie_domain_Movie_releaseDate" required="true" z="FjlYR6lv93la9Cnn97EQToNGX2U="/>
+        <field:input field="summary" id="c_com_sjsu_movie_domain_Movie_summary" z="hmcvv3jT7mN2yyh0NPqwvArilFc="/>
+        <field:input field="banner" id="c_com_sjsu_movie_domain_Movie_banner" z="S4pMP01y0tqBYH4CFbiHXl+Rdf4="/>
+        <field:input field="rentFee" id="c_com_sjsu_movie_domain_Movie_rentFee" validationMessageCode="field_invalid_number" z="Kv3oSxC3mYJOuVX1lwAFfwc8P2M="/>
+        <field:input field="numberOfCopies" id="c_com_sjsu_movie_domain_Movie_numberOfCopies" validationMessageCode="field_invalid_integer" z="D3Bjjf6MrG56KlnI4tCHr8DoyGM="/>
+        <field:datetime dateTimePattern="${movie_createddate_date_format}" field="createdDate" id="c_com_sjsu_movie_domain_Movie_createdDate" required="true" z="VeLTXtAZO7aE5OpXWLlXit4TIiI="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_sjsu_movie_domain_Movie" render="${not empty dependencies}" z="97V4cussixAChS1pytxzMsKy2Fo="/>
+</div>

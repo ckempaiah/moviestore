@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_sjsu_movie_domain_MemberType" object="${membertype}" path="/membertypes" z="c0cjjs8iRmes3MDG8KCjWOXvvWs=">
+        <field:display field="memberTypeId" id="s_com_sjsu_movie_domain_MemberType_memberTypeId" object="${membertype}" z="00YxMjB6sCb3SxgxODMhMpH18lU="/>
+        <field:display field="typeName" id="s_com_sjsu_movie_domain_MemberType_typeName" object="${membertype}" z="mm2MWXBDxIJR+Fzn+eYRzO/B88Y="/>
+        <field:display field="totalMovies" id="s_com_sjsu_movie_domain_MemberType_totalMovies" object="${membertype}" z="MSzjQjW3x9dlFb88pqWxYMWyBr0="/>
+        <field:display field="memberFee" id="s_com_sjsu_movie_domain_MemberType_memberFee" object="${membertype}" z="Sx9pU8TFkkxO48pU/dh5MRI9z3o="/>
+    </page:show>
+</div>

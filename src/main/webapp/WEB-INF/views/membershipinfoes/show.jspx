@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_sjsu_movie_domain_MembershipInfo" object="${membershipinfo}" path="/membershipinfoes" z="3JH8crhSTNzSsoLpAsXMq1X8CTc=">
+        <field:display field="membershipId" id="s_com_sjsu_movie_domain_MembershipInfo_membershipId" object="${membershipinfo}" z="vg9qOJ8ajuXibeXn3jSpsa06N/E="/>
+        <field:display field="membershipNumber" id="s_com_sjsu_movie_domain_MembershipInfo_membershipNumber" object="${membershipinfo}" z="DhT2uoXitqGNkQl5ODbT+VecEzo="/>
+        <field:display field="balance" id="s_com_sjsu_movie_domain_MembershipInfo_balance" object="${membershipinfo}" z="34KRdKOp37mCo0ihGok8bRxj8ZE="/>
+        <field:display field="userId" id="s_com_sjsu_movie_domain_MembershipInfo_userId" object="${membershipinfo}" z="fl6EVPu1MXeZpD5JIVHrCC5r9uU="/>
+        <field:display field="outstandingMovies" id="s_com_sjsu_movie_domain_MembershipInfo_outstandingMovies" object="${membershipinfo}" z="DzE+nEXC6a+Di8nHcFjSTok+mlo="/>
+        <field:display date="true" dateTimePattern="${membershipInfo_createddate_date_format}" field="createdDate" id="s_com_sjsu_movie_domain_MembershipInfo_createdDate" object="${membershipinfo}" z="sK+9QsFmTEektOXdok96cjxz6Xg="/>
+        <field:display date="true" dateTimePattern="${membershipInfo_updateddate_date_format}" field="updatedDate" id="s_com_sjsu_movie_domain_MembershipInfo_updatedDate" object="${membershipinfo}" z="U93xNjpPShJ2xLfafhwjAgSXlok="/>
+        <field:display field="movieUser" id="s_com_sjsu_movie_domain_MembershipInfo_movieUser" object="${membershipinfo}" z="t1j9ySXeU5eQglkqf9oUyqEQhyg="/>
+        <field:display field="memberType" id="s_com_sjsu_movie_domain_MembershipInfo_memberType" object="${membershipinfo}" z="bu55LBGHz6AbEwPXJWciRlpDjhA="/>
+    </page:show>
+</div>

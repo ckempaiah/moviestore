@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_movie" z="hichdv7aEuYMOtK+Jo1tvg0X0G4=">
+            <menu:item id="i_movie_new" messageCode="global_menu_new" url="/movies?form" z="to2GhWM7H1c1NaSXcNW/EfaP1MQ="/>
+            <menu:item id="i_movie_list" messageCode="global_menu_list" url="/movies?page=1&amp;size=${empty param.size ? 10 : param.size}" z="o+833sKEWJKI9C1P60Bsr2pcJ4s="/>
+        </menu:category>
+        <menu:category id="c_membertype" z="FNB8CdVf8SqKqa0zwFgTvCEB5Rc=">
+            <menu:item id="i_membertype_new" messageCode="global_menu_new" url="/membertypes?form" z="YbVZ1gPGbbXN4oFaSjVqW4L6JOI="/>
+            <menu:item id="i_membertype_list" messageCode="global_menu_list" url="/membertypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="RUEUmyvn3CuS8nmaZtbxfwOKD5k="/>
+        </menu:category>
+        <menu:category id="c_bill" z="hAQcl5fPVV+gFU4o9uZs4YSdxCs=">
+            <menu:item id="i_bill_new" messageCode="global_menu_new" url="/bills?form" z="cVovhzw6GT+ic6ihf14TyR5AdJ8="/>
+            <menu:item id="i_bill_list" messageCode="global_menu_list" url="/bills?page=1&amp;size=${empty param.size ? 10 : param.size}" z="g/dBi1S+sB2EQX5WLDhE56E6Tr8="/>
+        </menu:category>
+        <menu:category id="c_movieuser" z="zI/7iab9GS2IJoZxTJl0eenNFk8=">
+            <menu:item id="i_movieuser_new" messageCode="global_menu_new" url="/movieusers?form" z="BK7dbYNQZeQy3iv9j016m9og3zs="/>
+            <menu:item id="i_movieuser_list" messageCode="global_menu_list" url="/movieusers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="D3iKIiKoXEjsRYUA2cWkOn37WCg="/>
+        </menu:category>
+        <menu:category id="c_movierental" z="641cwxDhtzQ14bZFIW7Dnhr68ls=">
+            <menu:item id="i_movierental_new" messageCode="global_menu_new" url="/movierentals?form" z="6+KgkSaNlO+1VYr2LbO7Jwx83lU="/>
+            <menu:item id="i_movierental_list" messageCode="global_menu_list" url="/movierentals?page=1&amp;size=${empty param.size ? 10 : param.size}" z="UF4SMVfYRbBsvtF1K7+TPt1UDiw="/>
+        </menu:category>
+        <menu:category id="c_membershipinfo" z="iAo8CPauieaONNqHxPqWvpGPzts=">
+            <menu:item id="i_membershipinfo_new" messageCode="global_menu_new" url="/membershipinfoes?form" z="ZpvdNHLR8gEm/r9Hxkor7NpkK0Q="/>
+            <menu:item id="i_membershipinfo_list" messageCode="global_menu_list" url="/membershipinfoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="9o41puVYXT9LXO2+kbz3h/m51y0="/>
+        </menu:category>
+    </menu:menu>
+</div>
