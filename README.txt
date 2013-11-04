@@ -1,3 +1,4 @@
+=================Project Setup ==================
 Requires following software
 Maven 2.1  or later
 Mysql 5.0 or later
@@ -26,5 +27,6 @@ Additional commands
 * connect to local mysql on command line
 mysql -h <host> -u <username> -p <password>
 example: mysql -h localhost -u root -p sa
+
 
 
