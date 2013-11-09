@@ -3,7 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_com_sjsu_movie_domain_MovieUser" modelAttribute="movieUser" path="/movieusers" render="${empty dependencies}" z="mb8we5d0uHRE7rHiEfTXVFDhhbA=">
-        <field:input field="userId" id="c_com_sjsu_movie_domain_MovieUser_userId" validationMessageCode="field_invalid_integer" z="B1LsTZHfJEgDPOfUbyclg3ucc9Y="/>
         <field:input field="userName" id="c_com_sjsu_movie_domain_MovieUser_userName" max="30" min="2" required="true" z="yLB3lupaA0XHuOFQqOKOxUnk7r4="/>
         <field:input field="password" id="c_com_sjsu_movie_domain_MovieUser_password" max="15" min="6" required="true" z="RFHpH47Nc+GOMSR3NKDhidfPaHs="/>
         <field:input field="firstName" id="c_com_sjsu_movie_domain_MovieUser_firstName" max="30" min="2" required="true" z="zCHTtiutgn1TTryd9TYve49BhLU="/>

@@ -4,12 +4,12 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_com_sjsu_movie_domain_Movie" items="${movies}" z="XlKuJg51DzM0QB2Y1qFbOqxKnrk=">
         <table:table data="${movies}" id="l_com_sjsu_movie_domain_Movie" path="/movies" z="0ORWMyuEwqyjsw26ESWAX2lgW5c=">
-            <table:column id="c_com_sjsu_movie_domain_Movie_movieId" property="movieId" z="9X/kefc3c4xKbgg/mNY/Yza//+M="/>
             <table:column id="c_com_sjsu_movie_domain_Movie_movieName" property="movieName" z="YSW/CbZ/I0sbfW9gNciu9zmCcDg="/>
             <table:column id="c_com_sjsu_movie_domain_Movie_category" property="category" z="nCbAh0ns3Gtz56acNwx8A7PPpZ0="/>
             <table:column date="true" dateTimePattern="${movie_releasedate_date_format}" id="c_com_sjsu_movie_domain_Movie_releaseDate" property="releaseDate" z="ZmpZGsvejbs987x/NlwZL23t8SY="/>
             <table:column id="c_com_sjsu_movie_domain_Movie_summary" property="summary" z="JXSE9QAo7vJIHdkO7qQt+M5Wj+w="/>
             <table:column id="c_com_sjsu_movie_domain_Movie_banner" property="banner" z="RfsKHwo8ywlYYHZKHyxKmzL+TwY="/>
+            <table:column id="c_com_sjsu_movie_domain_Movie_rentFee" property="rentFee" z="sT1eTYJKcyYCHJWDGi0qBFxx31w="/>
         </table:table>
     </page:list>
 </div>

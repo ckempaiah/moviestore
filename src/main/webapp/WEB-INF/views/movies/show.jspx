@@ -3,7 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_com_sjsu_movie_domain_Movie" object="${movie}" path="/movies" z="4aTE0YuwgXfliKuiPgItO8gkifs=">
-        <field:display field="movieId" id="s_com_sjsu_movie_domain_Movie_movieId" object="${movie}" z="9YG32sRVpdTBjvbA5eDrWVasum8="/>
         <field:display field="movieName" id="s_com_sjsu_movie_domain_Movie_movieName" object="${movie}" z="2qUqBP9fpuInGzImWqxlp/rAOBA="/>
         <field:display field="category" id="s_com_sjsu_movie_domain_Movie_category" object="${movie}" z="vKUfugKLmIEeSR/7eX9I2Lvlvmo="/>
         <field:display date="true" dateTimePattern="${movie_releasedate_date_format}" field="releaseDate" id="s_com_sjsu_movie_domain_Movie_releaseDate" object="${movie}" z="uUzxDb0ZTbLaO2DKFSrGDAVwzqs="/>

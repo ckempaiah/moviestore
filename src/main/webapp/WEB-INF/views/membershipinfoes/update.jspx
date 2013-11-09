@@ -3,10 +3,8 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_com_sjsu_movie_domain_MembershipInfo" modelAttribute="membershipInfo" path="/membershipinfoes" versionField="Version" z="5zlf2t3VKCfp65VyHj1FOhibxjU=">
-        <field:input field="membershipId" id="c_com_sjsu_movie_domain_MembershipInfo_membershipId" validationMessageCode="field_invalid_integer" z="5VvYwor13TI0pz1YAFnJfIlvvCU="/>
         <field:input field="membershipNumber" id="c_com_sjsu_movie_domain_MembershipInfo_membershipNumber" required="true" z="0Zo74YBsrfUvSFjZwlCyYhMLQ00="/>
         <field:input field="balance" id="c_com_sjsu_movie_domain_MembershipInfo_balance" validationMessageCode="field_invalid_number" z="JFHpY4pqWol3y2Qq3k7mOcmYJcY="/>
-        <field:input field="userId" id="c_com_sjsu_movie_domain_MembershipInfo_userId" required="true" validationMessageCode="field_invalid_integer" z="M9KLdEN5wvi9+poiK4i5RDC3V2g="/>
         <field:input field="outstandingMovies" id="c_com_sjsu_movie_domain_MembershipInfo_outstandingMovies" validationMessageCode="field_invalid_integer" z="i/0qMr8s3Eu7pFdX1zNuMtF/0po="/>
         <field:datetime dateTimePattern="${membershipInfo_createddate_date_format}" field="createdDate" id="c_com_sjsu_movie_domain_MembershipInfo_createdDate" z="iv629CZOFh609kZkFNoqRQsxvZk="/>
         <field:datetime dateTimePattern="${membershipInfo_updateddate_date_format}" field="updatedDate" id="c_com_sjsu_movie_domain_MembershipInfo_updatedDate" z="Puz5XcTx2L7+yN8u8acyPqe9AGo="/>

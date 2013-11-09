@@ -4,12 +4,12 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_com_sjsu_movie_domain_MovieRental" items="${movierentals}" z="xxBHKyqwnzPW9h4V3D/SGrxXPOc=">
         <table:table data="${movierentals}" id="l_com_sjsu_movie_domain_MovieRental" path="/movierentals" z="Hl0xv+4OYYxJS4WJSsbQhcoZWa8=">
-            <table:column id="c_com_sjsu_movie_domain_MovieRental_movieRentalId" property="movieRentalId" z="EUxmFQLewdheFIj1XfHkEQriCLw="/>
-            <table:column id="c_com_sjsu_movie_domain_MovieRental_userId" property="userId" z="uq/C4J+dPTAeW/wJ/FPFg76rh2w="/>
-            <table:column id="c_com_sjsu_movie_domain_MovieRental_movieId" property="movieId" z="rcHH6Br8JJxV7Xgj5sFA2ZPKzy0="/>
             <table:column date="true" dateTimePattern="${movieRental_renteddate_date_format}" id="c_com_sjsu_movie_domain_MovieRental_rentedDate" property="rentedDate" z="s4WQSVp0CbJAuzwub9SDMoXfmeM="/>
             <table:column date="true" dateTimePattern="${movieRental_returneddate_date_format}" id="c_com_sjsu_movie_domain_MovieRental_returnedDate" property="returnedDate" z="3FDInguJo7TBZcpqCmg3yD4NjoM="/>
             <table:column date="true" dateTimePattern="${movieRental_duedate_date_format}" id="c_com_sjsu_movie_domain_MovieRental_dueDate" property="dueDate" z="X+aQJMDXBMtHnXGrffnCEZEQ1QI="/>
+            <table:column id="c_com_sjsu_movie_domain_MovieRental_comments" property="comments" z="KMA5Jp0cXCndyBcEwHztLKIWN4o="/>
+            <table:column date="true" dateTimePattern="${movieRental_updateddate_date_format}" id="c_com_sjsu_movie_domain_MovieRental_updatedDate" property="updatedDate" z="j69KAwZ8sInK3Ewam4oRH3cJOoU="/>
+            <table:column id="c_com_sjsu_movie_domain_MovieRental_movieUser" property="movieUser" z="Txni+jsr4UtiLYWHRa2dgFafLsk="/>
         </table:table>
     </page:list>
 </div>

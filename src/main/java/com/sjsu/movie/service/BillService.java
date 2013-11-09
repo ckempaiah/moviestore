@@ -1,6 +1,27 @@
 package com.sjsu.movie.service;
-import org.springframework.roo.addon.layers.service.RooService;
+import com.sjsu.movie.domain.Bill;
+import java.util.List;
 
-@RooService(domainTypes = { com.sjsu.movie.domain.Bill.class })
 public interface BillService {
+
+	public abstract long countAllBills();
+
+
+	public abstract void deleteBill(Bill bill);
+
+
+	public abstract Bill findBill(Long id);
+
+
+	public abstract List<Bill> findAllBills();
+
+
+	public abstract List<Bill> findBillEntries(int firstResult, int maxResults);
+
+
+	public abstract void saveBill(Bill bill);
+
+
+	public abstract Bill updateBill(Bill bill);
+
 }

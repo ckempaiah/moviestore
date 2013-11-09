@@ -3,7 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_com_sjsu_movie_domain_Movie" modelAttribute="movie" path="/movies" versionField="Version" z="ExFkvek6xUKzyuYqd4DFh4o2BPA=">
-        <field:input field="movieId" id="c_com_sjsu_movie_domain_Movie_movieId" validationMessageCode="field_invalid_integer" z="TVjQS7q1Wm/PYchihYML7SmePSs="/>
         <field:input field="movieName" id="c_com_sjsu_movie_domain_Movie_movieName" required="true" z="LcCZKCZWKx3hKtoLFJj0YxnUslc="/>
         <field:input field="category" id="c_com_sjsu_movie_domain_Movie_category" z="QVVWC2me1ieZalWMp/E3QeRrtoE="/>
         <field:datetime dateTimePattern="${movie_releasedate_date_format}" field="releaseDate" id="c_com_sjsu_movie_domain_Movie_releaseDate" required="true" z="FjlYR6lv93la9Cnn97EQToNGX2U="/>

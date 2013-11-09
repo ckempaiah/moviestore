@@ -3,9 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_com_sjsu_movie_domain_MovieRental" modelAttribute="movieRental" path="/movierentals" render="${empty dependencies}" z="HXwFQ0dO9CfVn052qPIbpRS2q6Q=">
-        <field:input field="movieRentalId" id="c_com_sjsu_movie_domain_MovieRental_movieRentalId" validationMessageCode="field_invalid_integer" z="8innXy/vGNsShZq+8PHFsS1dgmg="/>
-        <field:input field="userId" id="c_com_sjsu_movie_domain_MovieRental_userId" required="true" validationMessageCode="field_invalid_integer" z="K4Y7H6qH0FPaG7/GtsnFEe1Y5Jc="/>
-        <field:input field="movieId" id="c_com_sjsu_movie_domain_MovieRental_movieId" required="true" validationMessageCode="field_invalid_integer" z="LntFTCjh4nK1K1kHG+eRst28l6w="/>
         <field:datetime dateTimePattern="${movieRental_renteddate_date_format}" field="rentedDate" id="c_com_sjsu_movie_domain_MovieRental_rentedDate" required="true" z="DL4NfChhUHT9uSlTs69dx57lSzw="/>
         <field:datetime dateTimePattern="${movieRental_returneddate_date_format}" field="returnedDate" id="c_com_sjsu_movie_domain_MovieRental_returnedDate" z="plrKwSVtZcx6rHocjSYNXs8ieZ0="/>
         <field:datetime dateTimePattern="${movieRental_duedate_date_format}" field="dueDate" id="c_com_sjsu_movie_domain_MovieRental_dueDate" required="true" z="mza816I7wEHfsOvnDOFujSACpyU="/>

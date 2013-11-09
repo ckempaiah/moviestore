@@ -3,7 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_com_sjsu_movie_domain_MovieUser" object="${movieuser}" path="/movieusers" z="kea8fShoPxjeaNTeFZVlljBwSKw=">
-        <field:display field="userId" id="s_com_sjsu_movie_domain_MovieUser_userId" object="${movieuser}" z="Wor2IpcQ1vlEtPyco8Y+QWjg5Hc="/>
         <field:display field="userName" id="s_com_sjsu_movie_domain_MovieUser_userName" object="${movieuser}" z="KrbuydSaR5byoZs7TGYMzX/Hu1w="/>
         <field:display field="password" id="s_com_sjsu_movie_domain_MovieUser_password" object="${movieuser}" z="Jn2BO1/HuYV9B/ea+yD8N4njtq8="/>
         <field:display field="firstName" id="s_com_sjsu_movie_domain_MovieUser_firstName" object="${movieuser}" z="cRsZuB43dagvRplJtiTWAIgUF+c="/>

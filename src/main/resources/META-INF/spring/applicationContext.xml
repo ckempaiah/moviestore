@@ -68,4 +68,9 @@
         <property name="persistenceUnitName" value="persistenceUnit"/>
         <property name="dataSource" ref="dataSource"/>
     </bean>
+    <!--<bean class="com.sjsu.movie.service.endpoint.MovieUserEndPoint" id="movieUserService"/>-->
+
+    <!--<bean class="org.springframework.remoting.jaxws.SimpleJaxWsServiceExporter">-->
+        <!--<property name="baseAddress" value="http://localhost:8080/webservice"/>-->
+    <!--</bean>-->
 </beans>
